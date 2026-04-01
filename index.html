@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cóndor Coffee - Menú Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Pantalla de Inicio / Menú -->
+        <main id="screen-home" class="screen active">
+            <header class="hero">
+                <div class="hero-accent-line"></div>
+                <svg class="hero-mountain" viewBox="0 0 300 90" preserveAspectRatio="none">
+                    <polygon points="0,90 50,40 90,62 140,15 190,48 230,28 270,45 300,30 300,90" fill="currentColor"/>
+                </svg>
+                <div class="hero-content">
+                    <span class="hero-badge">Huaraz · 3,052 msnm</span>
+                    <div class="hero-logo-container">
+                        <div class="brand-logo">
+                            <img src="assets/logo.png" alt="Logo" id="main-logo" onerror="this.style.display='none'; document.getElementById('placeholder-icon').style.display='flex'">
+                            <div id="placeholder-icon" class="hero-icon" style="display: none;">
+                                <svg width="22" height="22" viewBox="0 0 18 18">
+                                    <polygon points="9,2 16,14 2,14" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+                                    <circle cx="9" cy="10" r="2.5" fill="#fff"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="hero-sub">La guarida del montañista</p>
+                </div>
+            </header>
+
+            <nav class="cat-strip" id="category-nav">
+                <button class="cat-pill active" data-category="calientes_con_cafe">Calientes c/ Café</button>
+                <button class="cat-pill" data-category="frias_con_cafe">Frías c/ Café</button>
+                <button class="cat-pill" data-category="calientes_sin_cafe">Calientes s/ Café</button>
+                <button class="cat-pill" data-category="bebidas_frias">Bebidas Frías</button>
+                <button class="cat-pill" data-category="brunch">Brunch</button>
+                <button class="cat-pill" data-category="proximamente">Próximamente</button>
+            </nav>
+
+            <section class="menu-section">
+                <h2 class="section-label">Nuestra Selección</h2>
+                <div id="product-list" class="product-list"></div>
+            </section>
+
+            <footer class="bottom-bar">
+                <span class="cart-count">Ver categorías</span>
+                <button class="cart-btn" onclick="switchScreen('screen-categories')">Explorar</button>
+            </footer>
+        </main>
+
+        <!-- Pantalla de Categorías -->
+        <section id="screen-categories" class="screen">
+            <header class="hero hero-small">
+                <div class="hero-accent-line"></div>
+                <svg class="hero-mountain" viewBox="0 0 300 60" preserveAspectRatio="none">
+                    <polygon points="0,60 50,25 90,42 140,8 190,32 230,18 270,30 300,20 300,60" fill="currentColor"/>
+                </svg>
+                <div class="hero-content">
+                    <span class="hero-badge">¿Qué se te antoja?</span>
+                    <h2 class="hero-title">Categorías</h2>
+                </div>
+                <button class="back-btn" onclick="switchScreen('screen-home')">←</button>
+            </header>
+
+            <div class="cat-grid">
+                <div class="cat-card featured" onclick="selectCategory('calientes_con_cafe')">
+                    <div class="cat-card-info">
+                        <span class="cat-badge">Especialidad</span>
+                        <h3 class="cat-card-name">Calientes con Café</h3>
+                        <p class="cat-card-count">15 opciones</p>
+                    </div>
+                    <div class="cat-icon">☕</div>
+                </div>
+
+                <div class="cat-card" onclick="selectCategory('frias_con_cafe')">
+                    <div class="cat-icon">❄️</div>
+                    <h3 class="cat-card-name">Frías con Café</h3>
+                    <p class="cat-card-count">10 opciones</p>
+                </div>
+
+                <div class="cat-card" onclick="selectCategory('calientes_sin_cafe')">
+                    <div class="cat-icon">🍵</div>
+                    <h3 class="cat-card-name">Calientes sin Café</h3>
+                    <p class="cat-card-count">8 opciones</p>
+                </div>
+
+                <div class="cat-card" onclick="selectCategory('bebidas_frias')">
+                    <div class="cat-icon">🥤</div>
+                    <h3 class="cat-card-name">Bebidas Frías</h3>
+                    <p class="cat-card-count">5 opciones</p>
+                </div>
+
+                <div class="cat-card" onclick="selectCategory('brunch')">
+                    <div class="cat-icon">🥣</div>
+                    <h3 class="cat-card-name">Brunch</h3>
+                    <p class="cat-card-count">1 opción</p>
+                </div>
+
+                <div class="cat-card soon" onclick="selectCategory('proximamente')">
+                    <div class="cat-icon">🚀</div>
+                    <h3 class="cat-card-name">Próximamente</h3>
+                    <p class="cat-card-count">Nuevos sabores</p>
+                </div>
+            </div>
+
+            <footer class="bottom-bar center">
+                <div class="order-hint">Escanea el QR en tu mesa para ordenar</div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

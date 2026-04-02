@@ -79,7 +79,7 @@ body {
   position: relative;
   z-index: 1;
   padding-top: 140px; /* Espacio para el logo fijo */
-  padding-bottom: 15vh; /* Espacio para la montaña */
+  padding-bottom: 25vh; /* Espacio para la montaña */
 }
 .book-page::-webkit-scrollbar {
   display: none;
@@ -92,7 +92,7 @@ body {
   bottom: 0;
   left: 0;
   width: 1000vw;
-  height: 15vh; /* Tamaño más pequeño que el original de 25vh */
+  height: 25vh; /* Tamaño más pequeño que el original de 25vh */
   z-index: 10;
   pointer-events: none;
 }
@@ -350,7 +350,7 @@ body {
   width: 0%;
   background: var(--accent);
   border-radius: 2px;
-  animation: preloaderFill 3.5s linear forwards;
+  animation: preloaderFill 5s linear forwards;
 }
 
 @keyframes preloaderFill {

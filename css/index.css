@@ -285,6 +285,32 @@ body {
   margin: 1.4rem 0;
 }
 
+/* ── Indicador de Deslizar (Swipe) ── */
+.swipe-hint {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 2rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.85;
+  animation: swipeBounce 1.5s infinite;
+}
+
+.swipe-hint svg {
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes swipeBounce {
+  0%, 100% { transform: translateX(0); }
+  50%      { transform: translateX(8px); }
+}
+
 /* ══ PANTALLA DE PRECARGA ══ */
 #preloader {
   position: fixed;
@@ -353,4 +379,71 @@ body {
 @keyframes preloaderFill {
   from { width: 0%; }
   to   { width: 100%; }
+}
+
+/* ── Toggle Idioma (ES/EN) ── */
+.lang-toggle-container {
+  position: fixed;
+  top: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  z-index: 9999;
+  background: transparent;
+  padding: 6px;
+}
+
+.lang-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color 0.3s;
+}
+.lang-label.active {
+  color: var(--accent);
+}
+
+.lang-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+.lang-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.lang-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border);
+  transition: .4s;
+  border-radius: 20px;
+}
+.lang-slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--text);
+  transition: .4s;
+  border-radius: 50%;
+}
+.lang-switch input:checked + .lang-slider {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+.lang-switch input:checked + .lang-slider:before {
+  transform: translateX(16px);
+  background-color: #fff;
 }

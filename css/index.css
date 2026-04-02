@@ -79,7 +79,7 @@ body {
   position: relative;
   z-index: 1;
   padding-top: 140px; /* Espacio para el logo fijo */
-  padding-bottom: 25vh; /* Asegura que el contenido termine arriba de la montaña */
+  padding-bottom: 210px; /* Espacio para la montaña fija de 200px */
 }
 .book-page::-webkit-scrollbar {
   display: none;
@@ -92,15 +92,15 @@ body {
   bottom: 0;
   left: 0;
   width: 1000vw;
-  height: 25vh;
+  height: 200px;          /* altura fija para que sea consistente en móvil */
   z-index: 10;
   pointer-events: none;
 }
 .mountain-footer-container img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  object-position: bottom;
+  object-fit: cover;           /* mantiene proporción, no distorsiona */
+  object-position: bottom center;
   opacity: 0.95;
 }
 

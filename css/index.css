@@ -1,9 +1,6 @@
 @font-face {
   font-family: "Aliman";
-  src:
-    local("Aliman"),
-    url("../Aliman.woff2") format("woff2"),
-    url("../Aliman.ttf") format("truetype");
+  src: url("../assets/ALIMAN.otf") format("opentype");
 }
 
 :root {

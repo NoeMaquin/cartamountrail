@@ -70,7 +70,7 @@ const menuData = {
     { name: "Inti Golden Ale", desc: "", price: 20, img: "" },
     { name: "Alpamayo Amber Ale", desc: "", price: 20, img: "" },
     { name: "Mama Killa Spice Ale", desc: "", price: 20, img: "" },
-    { name: "Huaracina Pale Ale", desc: "", price: 20, img: "" },
+    { name: "Huaracina Pale Ale", desc: "", price: 22, img: "" },
     { name: "Chachapoyana Kolsch", desc: "", price: 20, img: "" },
     { name: "Shaman Ipa", desc: "", price: 22, img: "" },
     { name: "Don Juan Porter", desc: "", price: 22, img: "" },
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
     // ya usamos la clase screen-scrolled para controlar el top vía CSS, no ajustar inline styles aquí
-    
+
     ticking = false;
   }
 

@@ -1,132 +1,216 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafés — Menú</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cafés — Menú</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/index.css" />
-</head>
-
-<body>
-
-  <!-- ══ PANTALLA DE PRECARGA ══ -->
-  <div id="preloader">
-    <div class="preloader-inner">
-      <img src="assets/logo.png" alt="Carta Mountrail" class="preloader-logo" />
-      <p class="preloader-fact" id="preloader-fact-text"></p>
-      <div class="preloader-bar">
-        <div class="preloader-bar-fill"></div>
+  <body>
+    <!-- ══ PANTALLA DE PRECARGA ══ -->
+    <div id="preloader">
+      <div class="preloader-inner">
+        <img
+          src="assets/logo.png"
+          alt="Carta Mountrail"
+          class="preloader-logo"
+        />
+        <p class="preloader-fact" id="preloader-fact-text"></p>
+        <div class="preloader-bar">
+          <div class="preloader-bar-fill"></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- LOGO FIJO -->
-  <div class="fixed-top-logo">
-    <img src="assets/taza.png" alt="" class="header-deco header-deco--left" />
-    <img src="assets/logo.png" alt="Carta Mountrail" class="header-logo" />
-    <img src="assets/Tetera.png" alt="" class="header-deco header-deco--right" />
-  </div>
+    <!-- LOGO FIJO -->
+    <div class="fixed-top-logo">
+      <img src="assets/taza.png" alt="" class="header-deco header-deco--left" />
+      <img src="assets/logo.png" alt="Carta Mountrail" class="header-logo" />
+      <img
+        src="assets/Tetera.png"
+        alt=""
+        class="header-deco header-deco--right"
+      />
+    </div>
 
-  <!-- TOGLE DE IDIOMA (ES/EN) -->
-  <div class="lang-toggle-container">
-    <span class="lang-label active" id="label-es">ES</span>
-    <label class="lang-switch">
-      <input type="checkbox" id="langToggle">
-      <span class="lang-slider"></span>
-    </label>
-    <span class="lang-label" id="label-en">EN</span>
-  </div>
+    <!-- TOGLE DE IDIOMA (ES/EN) -->
+    <div class="lang-toggle-container">
+      <span class="lang-label active" id="label-es">ES</span>
+      <label class="lang-switch">
+        <input type="checkbox" id="langToggle" />
+        <span class="lang-slider"></span>
+      </label>
+      <span class="lang-label" id="label-en">EN</span>
+    </div>
 
-  <!-- ── Libro (Slider) ── -->
-  <div class="book-viewport">
+    <!-- ── Libro (Slider) ── -->
+    <div class="book-viewport">
+      <div class="book-content">
+        <!-- FOOTER CONTINUO -->
+        <div class="mountain-footer-container">
+          <img src="assets/Montaña.png" alt="Montaña Continua" />
+        </div>
 
-    <div class="book-content">
-      <!-- FOOTER CONTINUO -->
-      <div class="mountain-footer-container">
-        <img src="assets/Montaña.png" alt="Montaña Continua" />
-      </div>
+        <!-- SECCIÓN calientes_con_cafe -->
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">CAFÉ CALIENTE</h1>
+              <div class="title-bar"></div>
+            </div>
 
-      <!-- SECCIÓN calientes_con_cafe -->
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">CAFÉ CALIENTE</h1>
-            <div class="title-bar"></div>
-          </div>
-
-          <!-- Lista -->
-          <ul class="item-list">
-
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Espresso</span>
-                <span class="item-note">Café molido, agua</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 8</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Espresso doble</span>
-                <span class="item-note">Café recién molido, agua</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 14</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Café Americano</span>
-                <span class="item-note">Espresso, agua</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 11</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Espresso machiatto</span>
-                <span class="item-note">Espresso, leche cremada y texturizada</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 12</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Capuchino</span>
-                <span class="item-note">Espresso, leche deslactosada, vaso comestible</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 15</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Latte</span>
-                <span class="item-note">Espresso, leche deslactosada</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 16</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Mocaccino</span>
-                <span class="item-note">Espresso, salsa hersheys, leche deslactosada, cocoa</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 18</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Café Misk'i</span>
-                <span class="item-note">Espresso, miel, anís, canela</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 14</div>
-            </li>
-            <!--<li class="item">
+            <!-- Lista -->
+            <ul class="item-list">
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Espresso</span>
+                  <span class="item-note">Café molido, agua</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 8
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Espresso doble</span>
+                  <span class="item-note">Café recién molido, agua</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 14
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Café Americano</span>
+                  <span class="item-note">Espresso, agua</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 11
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Espresso machiatto</span>
+                  <span class="item-note"
+                    >Espresso, leche cremada y texturizada</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 12
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Capuchino</span>
+                  <span class="item-note"
+                    >Espresso, leche deslactosada, vaso comestible</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 15
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Latte</span>
+                  <span class="item-note">Espresso, leche deslactosada</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 16
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Mocaccino</span>
+                  <span class="item-note"
+                    >Espresso, salsa hersheys, leche deslactosada, cocoa</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 18
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Café Misk'i</span>
+                  <span class="item-note">Espresso, miel, anís, canela</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 14
+                </div>
+              </li>
+              <!--<li class="item">
               <div class="item-dot"></div>
               <div style="flex: 1;">
                 <span class="item-name">Irish Coffee</span>
@@ -134,575 +218,1023 @@
               </div>
               <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 26</div>
             </li>-->
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Carajillo</span>
-                <span class="item-note">Espresso, licor (coca, muña o hierbaluisa)</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Capuchino crema cacao/whisky/hierba luisa</span>
-                <span class="item-note">Espresso, leche deslactosada</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 24</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Capuchino Alpamayo</span>
-                <span class="item-note">Espresso, leche deslactosada, chantilly, vaso comestible</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 18</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Flat White</span>
-                <span class="item-note">Espresso doble, leche deslactosada</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 16</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- SECCIÓN jugos -->
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">JUGOS</h1>
-            <div class="title-bar"></div>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Carajillo</span>
+                  <span class="item-note"
+                    >Espresso, licor (coca, muña o hierbaluisa)</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 20
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name"
+                    >Capuchino crema cacao/whisky/hierba luisa</span
+                  >
+                  <span class="item-note">Espresso, leche deslactosada</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 24
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Capuchino Alpamayo</span>
+                  <span class="item-note"
+                    >Espresso, leche deslactosada, chantilly, vaso
+                    comestible</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 18
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Flat White</span>
+                  <span class="item-note"
+                    >Espresso doble, leche deslactosada</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 16
+                </div>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <!-- Lista -->
-          <ul class="item-list">
+        <!-- SECCIÓN jugos -->
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">JUGOS</h1>
+              <div class="title-bar"></div>
+            </div>
 
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Jugo Natural (Agua)</span>
-                <span class="item-note">Agua, pulpa a elección (papaya, piña, fresa, mango, maracuya)</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 13</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Jugo Natural (Leche)</span>
-                <span class="item-note">Leche, pulpa a elección (papaya, fresa, mango, maracuya)</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 16</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Jugo de naranja</span>
-                <span class="item-note"></span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 13</div>
-            </li>
-            <li class="item">
+            <!-- Lista -->
+            <ul class="item-list">
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Jugo Natural (Agua)</span>
+                  <span class="item-note"
+                    >Agua, pulpa a elección (papaya, piña, fresa, mango,
+                    maracuya)</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 13
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Jugo Natural (Leche)</span>
+                  <span class="item-note"
+                    >Leche, pulpa a elección (papaya, fresa, mango,
+                    maracuya)</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 16
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Jugo de naranja</span>
+                  <span class="item-note"></span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 13
+                </div>
+              </li>
+              <!--<li class="item">
               <div class="item-dot"></div>
               <div style="flex: 1;">
                 <span class="item-name">Jugo verde</span>
                 <span class="item-note">Espinaca, apio, manzana verde y naranja</span>
               </div>
               <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 17</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">BEBIDAS FRÍAS</h1>
-            <div class="title-bar"></div>
+            </li>-->
+            </ul>
           </div>
+        </div>
 
-          <!-- Lista -->
-          <ul class="item-list">
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">BEBIDAS FRÍAS</h1>
+              <div class="title-bar"></div>
+            </div>
 
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Soda michelada</span>
-                <span class="item-note">Soda, zumo de limón, michelado</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 10</div>
-            </li>
-            <li class="item">
+            <!-- Lista -->
+            <ul class="item-list">
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Soda michelada</span>
+                  <span class="item-note">Soda, zumo de limón, michelado</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 10
+                </div>
+              </li>
+              <!--<li class="item">
               <div class="item-dot"></div>
               <div style="flex: 1;">
                 <span class="item-name">Granizado Brownie</span>
                 <span class="item-note">Leche deslactosada, brownie chocolate, salsa de chocolate, chantilly</span>
               </div>
               <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Limonada natural</span>
-                <span class="item-note">Agua, zumo de limón</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 12</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Milo</span>
-                <span class="item-note">Milo, leche</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 15</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- SECCIÓN calientes_sin_cafe -->
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">CALIENTES SIN CAFÉ</h1>
-            <div class="title-bar"></div>
+            </li>-->
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Limonada natural</span>
+                  <span class="item-note">Agua, zumo de limón</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 12
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Milo</span>
+                  <span class="item-note">Milo, leche</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 15
+                </div>
+              </li>
+            </ul>
           </div>
-
-          <!-- Lista -->
-          <ul class="item-list">
-
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Chocolate masmelos</span>
-                <span class="item-note">Masmelos, chocolate, leche deslactosada</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 18</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Infusión frutas</span>
-                <span class="item-note">Fresa, arándanos, infusión, agua caliente</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 15</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Vino caliente</span>
-                <span class="item-note">Vino tinto, canela, whisky, naranja</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 28</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Milo caliente</span>
-                <span class="item-note">Milo, leche deslactosada</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 14</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Maicena tradicional</span>
-                <span class="item-note">Azúcar, maicena, leche</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 14</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Maicena café</span>
-                <span class="item-note">Leche deslactosada, espresso, maicena, leche</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 16</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Te matcha</span>
-                <span class="item-note">Te matcha, leche deslactosada</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 15</div>
-            </li>
-          </ul>
         </div>
-      </div>
 
-      <!-- SECCIÓN frias_con_cafe -->
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">FRÍAS CON CAFÉ</h1>
-            <div class="title-bar"></div>
+        <!-- SECCIÓN calientes_sin_cafe -->
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">CALIENTES SIN CAFÉ</h1>
+              <div class="title-bar"></div>
+            </div>
+
+            <!-- Lista -->
+            <ul class="item-list">
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Chocolate masmelos</span>
+                  <span class="item-note"
+                    >Masmelos, chocolate, leche deslactosada</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 18
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Infusión frutas</span>
+                  <span class="item-note"
+                    >Fresa, arándanos, infusión, agua caliente</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 15
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Vino caliente</span>
+                  <span class="item-note"
+                    >Vino tinto, canela, whisky, naranja</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 28
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Milo caliente</span>
+                  <span class="item-note">Milo, leche deslactosada</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 14
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Maicena tradicional</span>
+                  <span class="item-note">Azúcar, maicena, leche</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 14
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Maicena café</span>
+                  <span class="item-note"
+                    >Leche deslactosada, espresso, maicena, leche</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 16
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Te matcha</span>
+                  <span class="item-note">Te matcha, leche deslactosada</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 15
+                </div>
+              </li>
+            </ul>
           </div>
-
-          <!-- Lista -->
-          <ul class="item-list">
-
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Granizado Café</span>
-                <span class="item-note">Leche deslactosada, azúcar, espresso, chantilly</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Affogato</span>
-                <span class="item-note">Helado Vainilla, espresso</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 16</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Frapuccino</span>
-                <span class="item-note">Leche deslactosada, espresso, crema de whisky, chantilly, galletas oreo</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 26</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Latte frío</span>
-                <span class="item-note">Café, leche</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 16</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Latte Macerado</span>
-                <span class="item-note">Espresso, leche deslactosada, licor de elección</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 25</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Mountain Coffee</span>
-                <span class="item-note">Cold brew, agua tónica</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 22</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Andea Citrus Brew</span>
-                <span class="item-note">Cold brew, soda toronja, miel</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 24</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Tropical peak brew</span>
-                <span class="item-note">Cold brew, soda de piña, limón</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 24</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Spiced Montain Brew</span>
-                <span class="item-note">Cold brew, ginger beer, canela</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 24</div>
-            </li>
-          </ul>
         </div>
-      </div>
 
-      <!-- SECCIÓN brunch -->
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">BRUNCH</h1>
-            <div class="title-bar"></div>
+        <!-- SECCIÓN frias_con_cafe -->
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">FRÍAS CON CAFÉ</h1>
+              <div class="title-bar"></div>
+            </div>
+
+            <!-- Lista -->
+            <ul class="item-list">
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Granizado Café</span>
+                  <span class="item-note"
+                    >Leche deslactosada, azúcar, espresso, chantilly</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 20
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Affogato</span>
+                  <span class="item-note">Helado Vainilla, espresso</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 16
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Frapuccino</span>
+                  <span class="item-note"
+                    >Leche deslactosada, espresso, crema de whisky, chantilly,
+                    galletas oreo</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 26
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Latte frío</span>
+                  <span class="item-note">Café, leche</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 16
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Latte Macerado</span>
+                  <span class="item-note"
+                    >Espresso, leche deslactosada, licor de elección</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 25
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Mountain Coffee</span>
+                  <span class="item-note">Cold brew, agua tónica</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 22
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Andea Citrus Brew</span>
+                  <span class="item-note">Cold brew, soda toronja, miel</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 24
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Tropical peak brew</span>
+                  <span class="item-note">Cold brew, soda de piña, limón</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 24
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Spiced Montain Brew</span>
+                  <span class="item-note">Cold brew, ginger beer, canela</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 24
+                </div>
+              </li>
+            </ul>
           </div>
-
-          <!-- Lista -->
-          <ul class="item-list">
-
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Parfait</span>
-                <span class="item-note">Yogurt griego, fresa, plátano, manzana, granola, miel</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 25</div>
-            </li>
-          </ul>
         </div>
-      </div>
 
-      <!-- SECCIÓN postres -->
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">POSTRES</h1>
-            <div class="title-bar"></div>
+        <!-- SECCIÓN brunch -->
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">BRUNCH</h1>
+              <div class="title-bar"></div>
+            </div>
+
+            <!-- Lista -->
+            <ul class="item-list">
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Parfait</span>
+                  <span class="item-note"
+                    >Yogurt griego, fresa, plátano, manzana, granola, miel</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 25
+                </div>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <!-- Lista -->
-          <ul class="item-list">
+        <!-- SECCIÓN postres -->
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">POSTRES</h1>
+              <div class="title-bar"></div>
+            </div>
 
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Torta Chocolate</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 15</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Torta de zanahoria</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 15</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Torta selva negra</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 15</div>
-            </li>
-            <li class="item">
+            <!-- Lista -->
+            <ul class="item-list">
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Torta Chocolate</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 15
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Torta de zanahoria</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 15
+                </div>
+              </li>
+              <!--<li class="item">
               <div class="item-dot"></div>
               <div style="flex: 1;">
                 <span class="item-name">Cheesecake Arándonos</span>
 
               </div>
               <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 18</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Cheesecake Maracuya</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 18</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Pie de Limón</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 16</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Torta chocolate con helado</span>
-                <span class="item-note">Helado de vainilla</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 22</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- SECCIÓN aguas -->
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">BEBIDAS</h1>
-            <div class="title-bar"></div>
+            </li>-->
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Torta de maracuya y chocolate</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 18
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Pie de Limón</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 16
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Torta chocolate con helado</span>
+                  <span class="item-note">Helado de vainilla</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 22
+                </div>
+              </li>
+            </ul>
           </div>
-
-          <!-- Lista -->
-          <ul class="item-list">
-
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Agua con gas Socosani</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 8</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Agua sin gas Socosani</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 7</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Soda saborizada</span>
-                <span class="item-note">Toronja o piña</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 13</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Powerade 600ml</span>
-                <span class="item-note">Bebida hidratante</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 6</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Powerade 1000ml</span>
-                <span class="item-note">Bebida hidratante</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 9</div>
-            </li>
-          </ul>
         </div>
-      </div>
 
-      <!-- SECCIÓN cerveza_sierra_andina -->
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">CERVEZAS SIERRA ANDINA</h1>
-            <div class="title-bar"></div>
+        <!-- SECCIÓN aguas -->
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">BEBIDAS</h1>
+              <div class="title-bar"></div>
+            </div>
+
+            <!-- Lista -->
+            <ul class="item-list">
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name"
+                    >URQUPUSHÚN-UCHCU PEDRO(Mango-Maracuya-Tumbo)</span
+                  >
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 15
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Agua con gas Socosani</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 8
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Agua sin gas Socosani</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 7
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Soda saborizada</span>
+                  <span class="item-note">Toronja o piña</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 13
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Powerade 600ml</span>
+                  <span class="item-note">Bebida hidratante</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 6
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Powerade 1000ml</span>
+                  <span class="item-note">Bebida hidratante</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 9
+                </div>
+              </li>
+            </ul>
           </div>
-
-          <!-- Lista -->
-          <ul class="item-list">
-
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Inti Golden Ale</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Alpamayo Amber Ale</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Mama Killa Spice Ale</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Huaracina Pale Ale</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 22</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Chachapoyana Kolsch</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Shaman Ipa</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 22</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Don Juan Porter</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 22</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Pachacutec Imperial Ale</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 22</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Chakana Quinoa Ipa</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Golden Stout</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Black Jesus</span>
-
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 22</div>
-            </li>
-          </ul>
         </div>
-      </div>
 
-      <!-- SECCIÓN sandwiches -->
-      <div class="book-page">
-        <!-- ══ CUERPO ══ -->
-        <div class="menu-body">
-          <!-- Título -->
-          <div class="header">
-            <h1 class="title">SÁNDWICHES</h1>
-            <div class="title-bar"></div>
+        <!-- SECCIÓN cerveza_sierra_andina -->
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">CERVEZAS SIERRA ANDINA</h1>
+              <div class="title-bar"></div>
+            </div>
+
+            <!-- Lista -->
+            <ul class="item-list">
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Inti Golden Ale</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 20
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Alpamayo Amber Ale</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 20
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Mama Killa Spice Ale</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 20
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Huaracina Pale Ale</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 22
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Chachapoyana Kolsch</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 20
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Shaman Ipa</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 22
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Don Juan Porter</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 22
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Pachacutec Imperial Ale</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 22
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Chakana Quinoa Ipa</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 20
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Golden Stout</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 20
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Black Jesus</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 22
+                </div>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <!-- Lista -->
-          <ul class="item-list">
+        <!-- SECCIÓN sandwiches -->
+        <div class="book-page">
+          <!-- ══ CUERPO ══ -->
+          <div class="menu-body">
+            <!-- Título -->
+            <div class="header">
+              <h1 class="title">SÁNDWICHES</h1>
+              <div class="title-bar"></div>
+            </div>
 
-            <li class="item">
+            <!-- Lista -->
+            <ul class="item-list">
+              <!--<li class="item">
               <div class="item-dot"></div>
               <div style="flex: 1;">
                 <span class="item-name">Caprese</span>
@@ -717,250 +1249,289 @@
                 <span class="item-note">Pan focaccia, pollo, tomate, pesto</span>
               </div>
               <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 30</div>
-            </li>
-            <li class="item">
-              <div class="item-dot"></div>
-              <div style="flex: 1;">
-                <span class="item-name">Jamón y queso</span>
-                <span class="item-note">Pan croissant, jamón, queso</span>
-              </div>
-              <div style="font-weight: 600; color: var(--accent); white-space: nowrap; padding-left: 10px;">S/ 20</div>
-            </li>
-          </ul>
+            </li>-->
+              <li class="item">
+                <div class="item-dot"></div>
+                <div style="flex: 1">
+                  <span class="item-name">Jamón y queso</span>
+                  <span class="item-note">Pan croissant, jamón, queso</span>
+                </div>
+                <div
+                  style="
+                    font-weight: 600;
+                    color: var(--accent);
+                    white-space: nowrap;
+                    padding-left: 10px;
+                  "
+                >
+                  S/ 20
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
 
-  <script>
-    // Inyectar indicador de "Desliza" en cada sección excepto la última
-    const pages = document.querySelectorAll('.book-page');
-    pages.forEach((page, index) => {
-      if (index < pages.length - 1) {
-        const hint = document.createElement('div');
-        hint.className = 'swipe-hint';
-        hint.innerHTML = '<span>Desliza</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
-        const menuBody = page.querySelector('.menu-body');
-        if (menuBody) menuBody.appendChild(hint);
-      }
-    });
-
-    // Banco de datos curiosos del café
-    const coffeeFacts = [
-      "El café fue descubierto en Etiopía, cuando un pastor notó que sus cabras bailaban después de comer las bayas de un árbol.",
-      "El café es la segunda bebida más consumida en el mundo, después del agua.",
-      "Un árbol de café tarda entre 3 y 4 años en dar sus primeros frutos y puede vivir más de 100 años.",
-      "La palabra 'café' proviene del árabe qahwah, que originalmente describía un tipo de vino.",
-      "El espresso no tiene más cafeína que el café filtrado; su concentración es mayor, pero el volumen es menor.",
-      "En japonés, 'kissaten' es el nombre del café tradicional donde la experiencia es tan importante como la bebida.",
-      "El café fue prohibido en varios países europeos en el siglo XVII; los líderes temían que impulsara el pensamiento crítico.",
-      "Finlandia es el país que más café consume per cápita en el mundo, con más de 12 kg por persona al año.",
-      "El cold brew no es café frío: se prepara en agua fría durante 12 a 24 horas, sin calor en ningún momento.",
-      "La cereza del café es un fruto: cada baya contiene dos semillas, que son los granos que conocemos.",
-      "El café Kopi Luwak, uno de los más caros del mundo, es procesado en el tracto digestivo de la civeta asiática.",
-      "El flat white nació en Australia y Nueva Zelanda en la década de 1980, antes de llegar al mundo entero."
-    ];
-
-    // Mostrar uno al azar
-    const factEl = document.getElementById('preloader-fact-text');
-    factEl.textContent = coffeeFacts[Math.floor(Math.random() * coffeeFacts.length)];
-
-    const preloader = document.getElementById('preloader');
-    setTimeout(() => {
-      preloader.classList.add('preloader-hide');
-      setTimeout(() => preloader.remove(), 700);
-    }, 5000); /* Aumentado a 5 segundos */
-
-    // Lógica del Toggle de Idioma y Traducción
-    const langToggle = document.getElementById('langToggle');
-    const labelEs = document.getElementById('label-es');
-    const labelEn = document.getElementById('label-en');
-
-    const dictionary = {
-      // Titles
-      "CAFÉ CALIENTE": "HOT COFFEE",
-      "JUGOS": "JUICES",
-      "BEBIDAS FRÍAS": "COLD DRINKS",
-      "CALIENTES SIN CAFÉ": "HOT WHIT OUT COFFEE",
-      "FRÍAS CON CAFÉ": "COLD WHIT COFFEE",
-      "BRUNCH": "BRUNCH",
-      "POSTRES": "DESSERTS",
-      "BEBIDAS": "DRINKS (WATER)",
-      "CERVEZAS SIERRA ANDINA": "SIERRA ANDINA BEERS",
-      "SÁNDWICHES": "SANDWICHES",
-      "Desliza": "Swipe",
-
-      // Jugos
-      "Jugo Natural (Agua)": "Natural Juice (Water)",
-      "Agua, pulpa a elección (papaya, piña, fresa, mango, maracuya)": "Water, choice of pulp (papaya, pineapple, strawberry, mango, passion fruit)",
-      "Jugo Natural (Leche)": "Natural Juice (Milk)",
-      "Leche, pulpa a elección (papaya, fresa, mango, maracuya)": "Milk, choice of pulp (papaya, strawberry, mango, passion fruit)",
-      "Extracto de naranja": "Orange Extract",
-      "Naranja pura": "Pure orange",
-      "Jugo verde": "Green Juice",
-      "Espinaca, apio, manzana verde y naranja": "Spinach, celery, green apple and orange",
-
-      // Bebidas frias
-      "Soda michelada": "Michelada Soda",
-      "Soda, zumo de limón, michelado": "Soda, lemon juice, michelado rim",
-      "Granizado Brownie": "Brownie Slush",
-      "Leche deslactosada, brownie chocolate, salsa  de chocolate, chantilly": "Lactose-free milk, chocolate brownie, chocolate sauce, whipped cream",
-      "Limonada natural": "Natural Lemonade",
-      "Agua, zumo de limón": "Water, lemon juice",
-      "Milo": "Milo",
-      "Milo, leche": "Milo, milk",
-
-      // Calientes sin cafe
-      "Chocolate masmelos": "Marshmallow Chocolate",
-      "Masmelos, chocolate, leche deslactosada": "Marshmallows, chocolate, lactose-free milk",
-      "Infusión frutas": "Fruit Infusion",
-      "Fresa, arándanos, infusión, agua caliente": "Strawberry, blueberries, infusion, hot water",
-      "Vino caliente": "Mulled Wine",
-      "Vino tinto, canela, whisky, naranja": "Red wine, cinnamon, whiskey, orange",
-      "Milo caliente": "Hot Milo",
-      "Milo, leche deslactosada": "Milo, lactose-free milk",
-      "Maicena tradicional": "Traditional Cornstarch",
-      "Azúcar, maicena, leche": "Sugar, cornstarch, milk",
-      "Maicena café": "Coffee Cornstarch",
-      "Leche deslactosada, espresso, maicena, leche": "Lactose-free milk, espresso, cornstarch, milk",
-      "Te matcha": "Matcha Tea",
-      "Te matcha, leche deslactosada": "Matcha tea, lactose-free milk",
-
-      // Frias con cafe
-      "Granizado Café": "Coffee Slush",
-      "Leche deslactosada, azúcar, espresso, chantilly": "Lactose-free milk, sugar, espresso, whipped cream",
-      "Affogato": "Affogato",
-      "Helado Vainilla, espresso": "Vanilla ice cream, espresso",
-      "Frapuccino": "Frappuccino",
-      "Leche deslactosada, espresso, crema de whisky, chantilly, galletas oreo": "Lactose-free milk, espresso, Irish cream, whipped cream, oreo cookies",
-      "Latte frío": "Iced Latte",
-      "Café, leche": "Coffee, milk",
-      "Latte Macerado": "Macerated Latte",
-      "Espresso, leche deslactosada, licor de elección": "Espresso, lactose-free milk, liqueur of choice",
-      "Mountain Coffee": "Mountain Coffee",
-      "Cold brew, agua tónica": "Cold brew, tonic water",
-      "Andea Citrus Brew": "Andean Citrus Brew",
-      "Cold brew, soda toronja, miel": "Cold brew, grapefruit soda, honey",
-      "Tropical peak brew": "Tropical Peak Brew",
-      "Cold brew, soda de piña, limón": "Cold brew, pineapple soda, lemon",
-      "Spiced Montain Brew": "Spiced Mountain Brew",
-      "Cold brew, ginger beer, canela": "Cold brew, ginger beer, cinnamon",
-
-      // Cafe Caliente
-      "Espresso": "Espresso",
-      "Café molido, agua": "Ground coffee, water",
-      "Espresso doble": "Double Espresso",
-      "Café recién molido, agua": "Freshly ground coffee, water",
-      "Café Americano": "Americano",
-      "Espresso, agua": "Espresso, water",
-      "Espresso machiatto": "Espresso Macchiato",
-      "Espresso, leche cremada y texturizada": "Espresso, steamed and textured milk",
-      "Capuchino": "Cappuccino",
-      "Espresso, leche deslactosada, vaso comestible": "Espresso, lactose-free milk, edible cup",
-      "Latte": "Latte",
-      "Espresso, leche deslactosada": "Espresso, lactose-free milk",
-      "Mocaccino": "Mochaccino",
-      "Espresso, salsa hersheys, leche deslactosada, cocoa": "Espresso, Hershey's sauce, lactose-free milk, cocoa",
-      "Café Misk'i": "Misk'i Coffee",
-      "Espresso, miel, anís, canela": "Espresso, honey, anise, cinnamon",
-      "Irish Coffee": "Irish Coffee",
-      "Espresso, whiskey, leche deslactosada": "Espresso, whiskey, lactose-free milk",
-      "Carajillo": "Carajillo",
-      "Espresso, licor (coca, muña o hierbaluisa)": "Espresso, liqueur (coca, muña or lemongrass)",
-      "Capuchino crema cacao/whisky/hierba luisa": "Cappuccino Cocoa Cream/Whiskey/Lemongrass",
-      "Capuchino Alpamayo": "Alpamayo Cappuccino",
-      "Espresso, leche deslactosada, chantilly, vaso comestible": "Espresso, lactose-free milk, whipped cream, edible cup",
-      "Flat White": "Flat White",
-      "Espresso doble, leche deslactosada": "Double espresso, lactose-free milk",
-
-      // Brunch
-      "Parfait": "Parfait",
-      "Yogurt griego, fresa, plátano, manzana, granola, miel": "Greek yogurt, strawberry, banana, apple, granola, honey",
-      "Wafle Cásico": "Classic Waffle",
-      "Acompañado con miel": "Served with honey",
-      "Wafles Nutella/Helado": "Nutella & Ice Cream Waffles",
-      "Acompañado de fresas, arándanos, mermelada y platano": "Served with strawberries, blueberries, jam and banana",
-      "Wafles de pan de queso": "Cheese Bread Waffles",
-      "Wafles de masa de pan de queso, miel, fresas o arándanos": "Cheese bread dough waffles, honey, strawberries or blueberries",
-
-      // Postres
-      "Torta Chocolate": "Chocolate Cake",
-      "Torta de zanahoria": "Carrot Cake",
-      "Torta selva negra": "Black Forest Cake",
-      "Cheesecake Arándonos": "Blueberry Cheesecake",
-      "Cheesecake Maracuya": "Passion Fruit Cheesecake",
-      "Pie de Limón": "Lemon Pie",
-      "Pie de Manzana": "Apple Pie",
-      "Alfajores de café": "Coffee Alfajores",
-      "Alfajores Tradicionales": "Traditional Alfajores",
-      "Croissant de mantequilla": "Butter Croissant",
-      "Carrot cake": "Carrot Cake",
-
-      // Bebidas 
-      "Agua con gas Socosani": "Sparkling Water Socosani",
-      "Agua sin gas Socosani": "Still Water Socosani",
-
-      // Cervezas Sierra Andina
-      "Inti Golden Ale": "Inti Golden Ale",
-      "Alpamayo Amber Ale": "Alpamayo Amber Ale",
-      "Mama Killa Spice Ale": "Mama Killa Spice Ale",
-      "Huaracina Pale Ale": "Huaracina Pale Ale",
-      "Chachapoyana Kolsch": "Chachapoyana Kolsch",
-      "Shaman Ipa": "Shaman Ipa",
-      "Don Juan Porter": "Don Juan Porter",
-      "Pachacutec Imperial Ale": "Pachacutec Imperial Ale",
-      "Chakana Quinoa Ipa": "Chakana Quinoa Ipa",
-      "Golden Stout": "Golden Stout",
-      "Black Jesus": "Black Jesus",
-
-      // Sandwiches
-      "Desmechado de pollo Mountrail": "Mountrail Shredded Chicken",
-      "Pan ciabatta, pollo con mayonesa Mountrail y papas al hilo": "Ciabatta bread, chicken with Mountrail mayo and potato chips",
-      "Desmechado de Carne": "Shredded Beef",
-      "Pan ciabatta, carne desilachada en salsa roja": "Ciabatta bread, shredded beef in red sauce",
-      "Choripan": "Choripan",
-      "Pan ciabatta con fino chorizo precosido": "Ciabatta bread with fine pre-cooked chorizo",
-      "Hamburguesa Mountrail": "Mountrail Burger",
-      "Doble carne, pan brioch, cebolla caramelizada, doble queso cheddar": "Double beef, brioche bun, caramelized onions, double cheddar cheese"
-    };
-
-    // Crear diccionario inverso para volver al español rápidamente
-    const reverseDictionary = Object.entries(dictionary).reduce((acc, [es, en]) => {
-      acc[en] = es;
-      return acc;
-    }, {});
-
-    // Elementos a traducir
-    const getTranslatableElements = () => document.querySelectorAll('.title, .item-name, .item-note, .swipe-hint span');
-
-    function translateMenu(isEnglish) {
-      const activeDict = isEnglish ? dictionary : reverseDictionary;
-      const elements = getTranslatableElements();
-
-      elements.forEach(el => {
-        // En caso de que el element html tenga espacios de más, limpiamos temporalmente
-        const textToFind = el.textContent.trim();
-        if (activeDict[textToFind]) {
-          el.textContent = activeDict[textToFind];
+    <script>
+      // Inyectar indicador de "Desliza" en cada sección excepto la última
+      const pages = document.querySelectorAll(".book-page");
+      pages.forEach((page, index) => {
+        if (index < pages.length - 1) {
+          const hint = document.createElement("div");
+          hint.className = "swipe-hint";
+          hint.innerHTML =
+            '<span>Desliza</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+          const menuBody = page.querySelector(".menu-body");
+          if (menuBody) menuBody.appendChild(hint);
         }
       });
-    }
 
-    langToggle.addEventListener('change', (e) => {
-      if (e.target.checked) {
-        labelEs.classList.remove('active');
-        labelEn.classList.add('active');
-        translateMenu(true);
-      } else {
-        labelEn.classList.remove('active');
-        labelEs.classList.add('active');
-        translateMenu(false);
+      // Banco de datos curiosos del café
+      const coffeeFacts = [
+        "El café fue descubierto en Etiopía, cuando un pastor notó que sus cabras bailaban después de comer las bayas de un árbol.",
+        "El café es la segunda bebida más consumida en el mundo, después del agua.",
+        "Un árbol de café tarda entre 3 y 4 años en dar sus primeros frutos y puede vivir más de 100 años.",
+        "La palabra 'café' proviene del árabe qahwah, que originalmente describía un tipo de vino.",
+        "El espresso no tiene más cafeína que el café filtrado; su concentración es mayor, pero el volumen es menor.",
+        "En japonés, 'kissaten' es el nombre del café tradicional donde la experiencia es tan importante como la bebida.",
+        "El café fue prohibido en varios países europeos en el siglo XVII; los líderes temían que impulsara el pensamiento crítico.",
+        "Finlandia es el país que más café consume per cápita en el mundo, con más de 12 kg por persona al año.",
+        "El cold brew no es café frío: se prepara en agua fría durante 12 a 24 horas, sin calor en ningún momento.",
+        "La cereza del café es un fruto: cada baya contiene dos semillas, que son los granos que conocemos.",
+        "El café Kopi Luwak, uno de los más caros del mundo, es procesado en el tracto digestivo de la civeta asiática.",
+        "El flat white nació en Australia y Nueva Zelanda en la década de 1980, antes de llegar al mundo entero.",
+      ];
+
+      // Mostrar uno al azar
+      const factEl = document.getElementById("preloader-fact-text");
+      factEl.textContent =
+        coffeeFacts[Math.floor(Math.random() * coffeeFacts.length)];
+
+      const preloader = document.getElementById("preloader");
+      setTimeout(() => {
+        preloader.classList.add("preloader-hide");
+        setTimeout(() => preloader.remove(), 700);
+      }, 5000); /* Aumentado a 5 segundos */
+
+      // Lógica del Toggle de Idioma y Traducción
+      const langToggle = document.getElementById("langToggle");
+      const labelEs = document.getElementById("label-es");
+      const labelEn = document.getElementById("label-en");
+
+      const dictionary = {
+        // Titles
+        "CAFÉ CALIENTE": "HOT COFFEE",
+        JUGOS: "JUICES",
+        "BEBIDAS FRÍAS": "COLD DRINKS",
+        "CALIENTES SIN CAFÉ": "HOT WHIT OUT COFFEE",
+        "FRÍAS CON CAFÉ": "COLD WHIT COFFEE",
+        BRUNCH: "BRUNCH",
+        POSTRES: "DESSERTS",
+        BEBIDAS: "DRINKS (WATER)",
+        "CERVEZAS SIERRA ANDINA": "SIERRA ANDINA BEERS",
+        SÁNDWICHES: "SANDWICHES",
+        Desliza: "Swipe",
+
+        // Jugos
+        "Jugo Natural (Agua)": "Natural Juice (Water)",
+        "Agua, pulpa a elección (papaya, piña, fresa, mango, maracuya)":
+          "Water, choice of pulp (papaya, pineapple, strawberry, mango, passion fruit)",
+        "Jugo Natural (Leche)": "Natural Juice (Milk)",
+        "Leche, pulpa a elección (papaya, fresa, mango, maracuya)":
+          "Milk, choice of pulp (papaya, strawberry, mango, passion fruit)",
+        "Extracto de naranja": "Orange Extract",
+        "Naranja pura": "Pure orange",
+        "Jugo verde": "Green Juice",
+        "Espinaca, apio, manzana verde y naranja":
+          "Spinach, celery, green apple and orange",
+
+        // Bebidas frias
+        "Soda michelada": "Michelada Soda",
+        "Soda, zumo de limón, michelado": "Soda, lemon juice, michelado rim",
+        "Granizado Brownie": "Brownie Slush",
+        "Leche deslactosada, brownie chocolate, salsa  de chocolate, chantilly":
+          "Lactose-free milk, chocolate brownie, chocolate sauce, whipped cream",
+        "Limonada natural": "Natural Lemonade",
+        "Agua, zumo de limón": "Water, lemon juice",
+        Milo: "Milo",
+        "Milo, leche": "Milo, milk",
+
+        // Calientes sin cafe
+        "Chocolate masmelos": "Marshmallow Chocolate",
+        "Masmelos, chocolate, leche deslactosada":
+          "Marshmallows, chocolate, lactose-free milk",
+        "Infusión frutas": "Fruit Infusion",
+        "Fresa, arándanos, infusión, agua caliente":
+          "Strawberry, blueberries, infusion, hot water",
+        "Vino caliente": "Mulled Wine",
+        "Vino tinto, canela, whisky, naranja":
+          "Red wine, cinnamon, whiskey, orange",
+        "Milo caliente": "Hot Milo",
+        "Milo, leche deslactosada": "Milo, lactose-free milk",
+        "Maicena tradicional": "Traditional Cornstarch",
+        "Azúcar, maicena, leche": "Sugar, cornstarch, milk",
+        "Maicena café": "Coffee Cornstarch",
+        "Leche deslactosada, espresso, maicena, leche":
+          "Lactose-free milk, espresso, cornstarch, milk",
+        "Te matcha": "Matcha Tea",
+        "Te matcha, leche deslactosada": "Matcha tea, lactose-free milk",
+
+        // Frias con cafe
+        "Granizado Café": "Coffee Slush",
+        "Leche deslactosada, azúcar, espresso, chantilly":
+          "Lactose-free milk, sugar, espresso, whipped cream",
+        Affogato: "Affogato",
+        "Helado Vainilla, espresso": "Vanilla ice cream, espresso",
+        Frapuccino: "Frappuccino",
+        "Leche deslactosada, espresso, crema de whisky, chantilly, galletas oreo":
+          "Lactose-free milk, espresso, Irish cream, whipped cream, oreo cookies",
+        "Latte frío": "Iced Latte",
+        "Café, leche": "Coffee, milk",
+        "Latte Macerado": "Macerated Latte",
+        "Espresso, leche deslactosada, licor de elección":
+          "Espresso, lactose-free milk, liqueur of choice",
+        "Mountain Coffee": "Mountain Coffee",
+        "Cold brew, agua tónica": "Cold brew, tonic water",
+        "Andea Citrus Brew": "Andean Citrus Brew",
+        "Cold brew, soda toronja, miel": "Cold brew, grapefruit soda, honey",
+        "Tropical peak brew": "Tropical Peak Brew",
+        "Cold brew, soda de piña, limón": "Cold brew, pineapple soda, lemon",
+        "Spiced Montain Brew": "Spiced Mountain Brew",
+        "Cold brew, ginger beer, canela": "Cold brew, ginger beer, cinnamon",
+
+        // Cafe Caliente
+        Espresso: "Espresso",
+        "Café molido, agua": "Ground coffee, water",
+        "Espresso doble": "Double Espresso",
+        "Café recién molido, agua": "Freshly ground coffee, water",
+        "Café Americano": "Americano",
+        "Espresso, agua": "Espresso, water",
+        "Espresso machiatto": "Espresso Macchiato",
+        "Espresso, leche cremada y texturizada":
+          "Espresso, steamed and textured milk",
+        Capuchino: "Cappuccino",
+        "Espresso, leche deslactosada, vaso comestible":
+          "Espresso, lactose-free milk, edible cup",
+        Latte: "Latte",
+        "Espresso, leche deslactosada": "Espresso, lactose-free milk",
+        Mocaccino: "Mochaccino",
+        "Espresso, salsa hersheys, leche deslactosada, cocoa":
+          "Espresso, Hershey's sauce, lactose-free milk, cocoa",
+        "Café Misk'i": "Misk'i Coffee",
+        "Espresso, miel, anís, canela": "Espresso, honey, anise, cinnamon",
+        "Irish Coffee": "Irish Coffee",
+        "Espresso, whiskey, leche deslactosada":
+          "Espresso, whiskey, lactose-free milk",
+        Carajillo: "Carajillo",
+        "Espresso, licor (coca, muña o hierbaluisa)":
+          "Espresso, liqueur (coca, muña or lemongrass)",
+        "Capuchino crema cacao/whisky/hierba luisa":
+          "Cappuccino Cocoa Cream/Whiskey/Lemongrass",
+        "Capuchino Alpamayo": "Alpamayo Cappuccino",
+        "Espresso, leche deslactosada, chantilly, vaso comestible":
+          "Espresso, lactose-free milk, whipped cream, edible cup",
+        "Flat White": "Flat White",
+        "Espresso doble, leche deslactosada":
+          "Double espresso, lactose-free milk",
+
+        // Brunch
+        Parfait: "Parfait",
+        "Yogurt griego, fresa, plátano, manzana, granola, miel":
+          "Greek yogurt, strawberry, banana, apple, granola, honey",
+        "Wafle Cásico": "Classic Waffle",
+        "Acompañado con miel": "Served with honey",
+        "Wafles Nutella/Helado": "Nutella & Ice Cream Waffles",
+        "Acompañado de fresas, arándanos, mermelada y platano":
+          "Served with strawberries, blueberries, jam and banana",
+        "Wafles de pan de queso": "Cheese Bread Waffles",
+        "Wafles de masa de pan de queso, miel, fresas o arándanos":
+          "Cheese bread dough waffles, honey, strawberries or blueberries",
+
+        // Postres
+        "Torta Chocolate": "Chocolate Cake",
+        "Torta de zanahoria": "Carrot Cake",
+        "Torta selva negra": "Black Forest Cake",
+        "Cheesecake Arándonos": "Blueberry Cheesecake",
+        "Cheesecake Maracuya": "Passion Fruit Cheesecake",
+        "Pie de Limón": "Lemon Pie",
+        "Pie de Manzana": "Apple Pie",
+        "Alfajores de café": "Coffee Alfajores",
+        "Alfajores Tradicionales": "Traditional Alfajores",
+        "Croissant de mantequilla": "Butter Croissant",
+        "Carrot cake": "Carrot Cake",
+
+        // Bebidas
+        "Agua con gas Socosani": "Sparkling Water Socosani",
+        "Agua sin gas Socosani": "Still Water Socosani",
+
+        // Cervezas Sierra Andina
+        "Inti Golden Ale": "Inti Golden Ale",
+        "Alpamayo Amber Ale": "Alpamayo Amber Ale",
+        "Mama Killa Spice Ale": "Mama Killa Spice Ale",
+        "Huaracina Pale Ale": "Huaracina Pale Ale",
+        "Chachapoyana Kolsch": "Chachapoyana Kolsch",
+        "Shaman Ipa": "Shaman Ipa",
+        "Don Juan Porter": "Don Juan Porter",
+        "Pachacutec Imperial Ale": "Pachacutec Imperial Ale",
+        "Chakana Quinoa Ipa": "Chakana Quinoa Ipa",
+        "Golden Stout": "Golden Stout",
+        "Black Jesus": "Black Jesus",
+
+        // Sandwiches
+        "Desmechado de pollo Mountrail": "Mountrail Shredded Chicken",
+        "Pan ciabatta, pollo con mayonesa Mountrail y papas al hilo":
+          "Ciabatta bread, chicken with Mountrail mayo and potato chips",
+        "Desmechado de Carne": "Shredded Beef",
+        "Pan ciabatta, carne desilachada en salsa roja":
+          "Ciabatta bread, shredded beef in red sauce",
+        Choripan: "Choripan",
+        "Pan ciabatta con fino chorizo precosido":
+          "Ciabatta bread with fine pre-cooked chorizo",
+        "Hamburguesa Mountrail": "Mountrail Burger",
+        "Doble carne, pan brioch, cebolla caramelizada, doble queso cheddar":
+          "Double beef, brioche bun, caramelized onions, double cheddar cheese",
+      };
+
+      // Crear diccionario inverso para volver al español rápidamente
+      const reverseDictionary = Object.entries(dictionary).reduce(
+        (acc, [es, en]) => {
+          acc[en] = es;
+          return acc;
+        },
+        {},
+      );
+
+      // Elementos a traducir
+      const getTranslatableElements = () =>
+        document.querySelectorAll(
+          ".title, .item-name, .item-note, .swipe-hint span",
+        );
+
+      function translateMenu(isEnglish) {
+        const activeDict = isEnglish ? dictionary : reverseDictionary;
+        const elements = getTranslatableElements();
+
+        elements.forEach((el) => {
+          // En caso de que el element html tenga espacios de más, limpiamos temporalmente
+          const textToFind = el.textContent.trim();
+          if (activeDict[textToFind]) {
+            el.textContent = activeDict[textToFind];
+          }
+        });
       }
-    });
 
-  </script>
-
-</body>
-
+      langToggle.addEventListener("change", (e) => {
+        if (e.target.checked) {
+          labelEs.classList.remove("active");
+          labelEn.classList.add("active");
+          translateMenu(true);
+        } else {
+          labelEn.classList.remove("active");
+          labelEs.classList.add("active");
+          translateMenu(false);
+        }
+      });
+    </script>
+  </body>
 </html>

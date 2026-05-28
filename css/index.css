@@ -136,10 +136,17 @@ body {
 .header-deco--left  { left: 20px; }
 .header-deco--right { right: 20px; }
 
+
 /* ══ CUERPO ══ */
 .menu-body {
   padding: 2rem 2.6rem 1.8rem;
   position: relative;
+  background: rgba(30, 30, 30, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin: 0 0.5rem;
 }
 
 /* ── Imagen deco esquina superior derecha ── */
@@ -181,9 +188,9 @@ body {
 }
 
 .title-bar {
-  width: 44px;
-  height: 2px;
-  background: var(--accent);
+  width: 64px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
   border-radius: 2px;
 }
 
@@ -242,23 +249,25 @@ body {
   align-items: flex-start;
   gap: 0.55rem;
   padding: 0.46rem 0.55rem;
-  border-radius: 4px;
-  transition: background 0.18s ease;
-  cursor: default;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background 0.2s ease;
+  cursor: pointer;
 }
 
-.item:hover {
-  background: rgba(62, 207, 186, 0.055);
+.item:hover, .item:active {
+  background: rgba(62, 207, 186, 0.08);
+  transform: translateX(6px);
 }
 
 .item-dot {
-  width: 5px;
-  height: 5px;
-  min-width: 5px;
-  border-radius: 50%;
-  background: var(--accent);
-  margin-top: 6px;
-  opacity: 0.75;
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  background-image: url('../assets/granocafe.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 2px;
+  opacity: 0.9;
 }
 
 .item-name {
@@ -277,6 +286,28 @@ body {
   color: var(--text-muted);
   letter-spacing: 0.05em;
   margin-top: 1px;
+}
+
+.badge-new {
+  display: inline-block;
+  background: var(--accent);
+  color: #111;
+  font-size: 0.5rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 6px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow: 0 0 6px rgba(62, 207, 186, 0.4);
+  animation: pulseBadge 2.5s infinite;
+}
+
+@keyframes pulseBadge {
+  0% { transform: scale(1); box-shadow: 0 0 4px rgba(62, 207, 186, 0.4); }
+  50% { transform: scale(1.05); box-shadow: 0 0 8px rgba(62, 207, 186, 0.8); }
+  100% { transform: scale(1); box-shadow: 0 0 4px rgba(62, 207, 186, 0.4); }
 }
 
 .divider {

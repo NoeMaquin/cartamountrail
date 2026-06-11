@@ -125,7 +125,7 @@ export default function MenuClient({ categories, products }) {
               className="w-full pt-4 pb-12"
             >
               {activeProducts.map((product) => (
-                <SwiperSlide key={product.id} className="!w-[78vw] !max-w-[320px] !h-auto transition-all duration-500">
+                <SwiperSlide key={product.id} className="!w-[65vw] !max-w-[260px] !h-auto transition-all duration-500">
                   {({ isActive }) => (
                     <div className={`product-card h-full ${isActive ? "active-card" : "opacity-50 scale-[0.85]"}`}>
                       <div className="product-img-container">

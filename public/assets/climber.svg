@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#3ecfba" stroke="#3ecfba" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Head -->
+    <circle cx="65" cy="20" r="8" stroke="none" />
+    <!-- Torso -->
+    <path d="M55,30 C65,40 65,55 50,65" fill="none" />
+    <!-- Left Arm holding the edge -->
+    <path d="M55,35 C40,30 25,25 15,15" fill="none" />
+    <!-- Right Arm holding further up -->
+    <path d="M55,35 C65,25 75,15 80,5" fill="none" />
+    <!-- Left Leg pushing against the wall -->
+    <path d="M50,65 C35,65 25,75 15,85" fill="none" />
+    <!-- Right Leg hanging down -->
+    <path d="M50,65 C55,80 60,90 65,95" fill="none" />
+  </g>
+</svg>

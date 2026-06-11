@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafés — Menú</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <!-- ══ PANTALLA DE PRECARGA ══ -->
+    <div id="preloader">
+      <div class="preloader-inner">
+        <img
+          src="assets/logo.png"
+          alt="Carta Mountrail"
+          class="preloader-logo"
+        />
+        <p class="preloader-fact" id="preloader-fact-text"></p>
+        <div class="preloader-bar">
+          <div class="preloader-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGO FIJO -->
+    <div class="fixed-top-logo">
+      <img src="assets/taza.png" alt="" class="header-deco header-deco--left" />
+      <img src="assets/logo.png" alt="Carta Mountrail" class="header-logo" />
+      <img
+        src="assets/Tetera.png"
+        alt=""
+        class="header-deco header-deco--right"
+      />
+    </div>
+
+    <!-- TOGLE DE IDIOMA (ES/EN) -->
+    <div class="lang-toggle-container">
+      <span class="lang-label active" id="label-es">ES</span>
+      <label class="lang-switch">
+        <input type="checkbox" id="langToggle" />
+        <span class="lang-slider"></span>
+      </label>
+      <span class="lang-label" id="label-en">EN</span>
+    </div>
+
+    <!-- FOOTER CONTINUO -->
+    <div class="mountain-footer-container">
+      <img src="assets/Montaña.png" alt="Montaña Continua" />
+    </div>
+
+    <!-- ── Main App Container ── -->
+    <div class="app-container">
+      
+      <!-- Category Slider Container -->
+      <div class="category-slider-container">
+        <div class="category-slider" id="category-slider">
+          <!-- Dynamically populated from JS -->
+        </div>
+      </div>
+
+      <!-- Swiper Carousel Container -->
+      <div class="swiper-container">
+        <!-- Swiper -->
+        <div class="swiper">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Dynamic Slides here -->
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- App Logic -->
+    <script src="js/script.js"></script>
+
+
+  </body>
+</html>
